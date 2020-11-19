@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154F51962566914800FC1F33 /* NewsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51952566914800FC1F33 /* NewsData.m */; };
+		154F519A2566921600FC1F33 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51992566921600FC1F33 /* NetworkService.m */; };
+		154F519D256692D900FC1F33 /* PhotoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F519C256692D900FC1F33 /* PhotoService.m */; };
+		154F51A02566936F00FC1F33 /* NewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F519F2566936F00FC1F33 /* NewsListController.m */; };
+		154F51A3256693E000FC1F33 /* NewsListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51A2256693E000FC1F33 /* NewsListTableCell.m */; };
+		154F51A62566944200FC1F33 /* NewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51A52566944200FC1F33 /* NewsView.m */; };
+		154F51A92566954D00FC1F33 /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51A82566954D00FC1F33 /* NewsDetailController.m */; };
+		154F51AD256695E200FC1F33 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51AC256695E200FC1F33 /* News.m */; };
+		154F51B02566963B00FC1F33 /* NewsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51AF2566963B00FC1F33 /* NewsDetailView.m */; };
 		1585053F255D489D0041B7D3 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 1585053E255D489D0041B7D3 /* airports.json */; };
 		15850541255D48A50041B7D3 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 15850540255D48A50041B7D3 /* cities.json */; };
 		15850543255D48AC0041B7D3 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 15850542255D48AC0041B7D3 /* countries.json */; };
@@ -31,6 +40,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154F51952566914800FC1F33 /* NewsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsData.m; sourceTree = "<group>"; };
+		154F51972566916100FC1F33 /* NewsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsData.h; sourceTree = "<group>"; };
+		154F51982566920B00FC1F33 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		154F51992566921600FC1F33 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		154F519B256692CE00FC1F33 /* PhotoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoService.h; sourceTree = "<group>"; };
+		154F519C256692D900FC1F33 /* PhotoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoService.m; sourceTree = "<group>"; };
+		154F519E2566936300FC1F33 /* NewsListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListController.h; sourceTree = "<group>"; };
+		154F519F2566936F00FC1F33 /* NewsListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListController.m; sourceTree = "<group>"; };
+		154F51A1256693D200FC1F33 /* NewsListTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListTableCell.h; sourceTree = "<group>"; };
+		154F51A2256693E000FC1F33 /* NewsListTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTableCell.m; sourceTree = "<group>"; };
+		154F51A42566943800FC1F33 /* NewsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsView.h; sourceTree = "<group>"; };
+		154F51A52566944200FC1F33 /* NewsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsView.m; sourceTree = "<group>"; };
+		154F51A72566953A00FC1F33 /* NewsDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailController.h; sourceTree = "<group>"; };
+		154F51A82566954D00FC1F33 /* NewsDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
+		154F51AA256695CE00FC1F33 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		154F51AC256695E200FC1F33 /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		154F51AE2566962F00FC1F33 /* NewsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailView.h; sourceTree = "<group>"; };
+		154F51AF2566963B00FC1F33 /* NewsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailView.m; sourceTree = "<group>"; };
 		1585053E255D489D0041B7D3 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		15850540255D48A50041B7D3 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		15850542255D48AC0041B7D3 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
@@ -82,6 +109,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154F51942566912F00FC1F33 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				154F51972566916100FC1F33 /* NewsData.h */,
+				154F51952566914800FC1F33 /* NewsData.m */,
+				154F51982566920B00FC1F33 /* NetworkService.h */,
+				154F51992566921600FC1F33 /* NetworkService.m */,
+				154F519B256692CE00FC1F33 /* PhotoService.h */,
+				154F519C256692D900FC1F33 /* PhotoService.m */,
+				154F519E2566936300FC1F33 /* NewsListController.h */,
+				154F519F2566936F00FC1F33 /* NewsListController.m */,
+				154F51A1256693D200FC1F33 /* NewsListTableCell.h */,
+				154F51A2256693E000FC1F33 /* NewsListTableCell.m */,
+				154F51A42566943800FC1F33 /* NewsView.h */,
+				154F51A52566944200FC1F33 /* NewsView.m */,
+				154F51A72566953A00FC1F33 /* NewsDetailController.h */,
+				154F51A82566954D00FC1F33 /* NewsDetailController.m */,
+				154F51AA256695CE00FC1F33 /* News.h */,
+				154F51AC256695E200FC1F33 /* News.m */,
+				154F51AE2566962F00FC1F33 /* NewsDetailView.h */,
+				154F51AF2566963B00FC1F33 /* NewsDetailView.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		15850547255D493C0041B7D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +231,7 @@
 		158D0040255D4460003264ED /* Aviogb */ = {
 			isa = PBXGroup;
 			children = (
+				154F51942566912F00FC1F33 /* News */,
 				158D005A255D457D003264ED /* Data */,
 				158D0064255D4689003264ED /* JSONs */,
 				15850547255D493C0041B7D3 /* View */,
@@ -295,20 +348,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				1585054A255D49720041B7D3 /* AirportListView.m in Sources */,
+				154F519D256692D900FC1F33 /* PhotoService.m in Sources */,
 				15850569255D4D9F0041B7D3 /* CountryListController.m in Sources */,
 				158D0043255D4461003264ED /* AppDelegate.m in Sources */,
 				1585054D255D49C80041B7D3 /* AirportCell.m in Sources */,
 				158D0063255D4641003264ED /* Airport.m in Sources */,
 				15850562255D4CE20041B7D3 /* CountryListView.m in Sources */,
+				154F51A62566944200FC1F33 /* NewsView.m in Sources */,
 				158D0060255D45FC003264ED /* City.m in Sources */,
+				154F51B02566963B00FC1F33 /* NewsDetailView.m in Sources */,
+				154F51A02566936F00FC1F33 /* NewsListController.m in Sources */,
+				154F51A92566954D00FC1F33 /* NewsDetailController.m in Sources */,
 				158D0054255D446B003264ED /* main.m in Sources */,
 				15850546255D48FB0041B7D3 /* DataManager.m in Sources */,
 				15850559255D4B390041B7D3 /* CityListCell.m in Sources */,
+				154F51AD256695E200FC1F33 /* News.m in Sources */,
 				158D0046255D4461003264ED /* SceneDelegate.m in Sources */,
 				15850565255D4D360041B7D3 /* CountryListViewCell.m in Sources */,
+				154F51A3256693E000FC1F33 /* NewsListTableCell.m in Sources */,
 				1585055D255D4B940041B7D3 /* CityListController.m in Sources */,
+				154F51962566914800FC1F33 /* NewsData.m in Sources */,
 				15850556255D4ADF0041B7D3 /* CityListView.m in Sources */,
 				15850551255D4A3A0041B7D3 /* AirportListController.m in Sources */,
+				154F519A2566921600FC1F33 /* NetworkService.m in Sources */,
 				158D005D255D45C3003264ED /* Country.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,8 @@
 //
-//  AirportListView.h
+//  NewsView.h
 //  Aviogb
 //
-//  Created by Алексей Мальков on 12.11.2020.
+//  Created by Алексей Мальков on 19.11.2020.
 //  Copyright © 2020 Alexey Malkov. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AirportListView : UIView
+@interface NewsView : UIView
 
 @property (nonatomic, strong, nonnull) UITableView *tableView;
 

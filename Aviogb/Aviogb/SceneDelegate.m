@@ -8,6 +8,8 @@
 
 #import "SceneDelegate.h"
 #import "CountryListController.h"
+#import "NewsListController.h"
+#import "CountryListController.h"
 
 @interface SceneDelegate ()
 
@@ -17,16 +19,27 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-
     if (self.window == nil && [scene isKindOfClass:[UIWindowScene class]]) {
         self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     }
 
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    
+    UITabBarItem *newsListItem = [[UITabBarItem alloc] initWithTitle:@"News" image:[UIImage systemImageNamed:@"book"] tag:0];
+    NewsListController *newsList = [[NewsListController alloc] init];
+
+    UINavigationController *newsNavController = [[UINavigationController alloc] initWithRootViewController:newsList];
+    newsNavController.tabBarItem = newsListItem;
+
+    UITabBarItem *countryListItem = [[UITabBarItem alloc] initWithTitle:@"Airports" image:[UIImage systemImageNamed:@"airplane"] tag:1];
     CountryListController *countryList = [[CountryListController alloc] init];
 
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:countryList];
+    UINavigationController *navCountryControll = [[UINavigationController alloc] initWithRootViewController:countryList];
+    navCountryControll.tabBarItem = countryListItem;
 
-    self.window.rootViewController = navController;
+    tabBar.viewControllers = @[newsNavController, navCountryControll];
+
+    self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
     
 }
@@ -36,7 +49,7 @@
     // Called as the scene is being released by the system.
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
-    // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+    // The scene may re-connect later, as its session was not neccessarily discarded (see application:didDiscardSceneSessions instead).
 }
 
 
