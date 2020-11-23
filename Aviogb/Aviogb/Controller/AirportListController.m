@@ -43,6 +43,20 @@
     
     [self loadAirportByCountry:self.selectedCountry AndCity:self.selectedCity];
     
+    UIImage *infoImage = [UIImage systemImageNamed:@"info.circle"];
+
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:infoImage style:UIBarButtonItemStylePlain target:self action:NSSelectorFromString(@"getCountryInfo")];
+    }
+
+    - (void)getCountryInfo {
+        MapController  *mapController = [[MapController alloc] init];
+        mapController.modalPresentationStyle = UIModalPresentationPopover;
+        mapController.city = self.selectedCity;
+        mapController.airports = self.airports;
+
+        [self presentViewController:mapController animated:true completion:^{
+
+        }];
 }
 
 - (void)loadAirportByCountry:(Country *)country AndCity:(City *)city {
