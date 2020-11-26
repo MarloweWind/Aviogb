@@ -10,6 +10,7 @@
 #import "CountryListController.h"
 #import "NewsListController.h"
 #import "CountryListController.h"
+#import "CollectionViewController.h"
 
 @interface SceneDelegate ()
 
@@ -37,7 +38,18 @@
     UINavigationController *navCountryControll = [[UINavigationController alloc] initWithRootViewController:countryList];
     navCountryControll.tabBarItem = countryListItem;
 
-    tabBar.viewControllers = @[navCountryControll, newsNavController];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.itemSize = CGSizeMake(100.0, 100.0);
+    flowLayout.minimumLineSpacing = 2;
+    flowLayout.minimumInteritemSpacing = 2;
+    
+    UICollectionViewController *collectionControl = [[CollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    UINavigationController *collectNavController = [[UINavigationController alloc] initWithRootViewController:collectionControl];
+    
+    UITabBarItem *colletionControllItem = [[UITabBarItem alloc] initWithTitle:@"Photo" image:[UIImage systemImageNamed:@"photo"] tag:2];
+    collectNavController.tabBarItem = colletionControllItem;
+
+    tabBar.viewControllers = @[navCountryControll, newsNavController, collectNavController];
 
     self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
@@ -49,7 +61,6 @@
     // Called as the scene is being released by the system.
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
-    // The scene may re-connect later, as its session was not neccessarily discarded (see application:didDiscardSceneSessions instead).
 }
 
 

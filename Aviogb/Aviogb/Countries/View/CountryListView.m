@@ -30,8 +30,9 @@
     self.tableView.userInteractionEnabled = true;
     [self addSubview:self.tableView];
     
-    self.searchController = [[UISearchController alloc] init];
-    self.searchController.definesPresentationContext = false;
+    self.resultViewController = [[SearchResultControllerTableViewController alloc] init];
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultViewController];
+    self.searchController.definesPresentationContext = true;
     self.searchController.obscuresBackgroundDuringPresentation = false;
     self.searchController.hidesNavigationBarDuringPresentation = false;
     self.searchController.hidesNavigationBarDuringPresentation = false;
