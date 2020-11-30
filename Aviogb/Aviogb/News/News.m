@@ -8,13 +8,16 @@
 
 #import "News.h"
 
+#import "News.h"
+
 @implementation News
 
 - (instancetype)initWithTitle:(NSString *)title ShortDescription:(NSString *)short_description Source:(NSString *)source {
     _title = title;
     _short_description = short_description;
     _source = source;
-    _imageUrl = nil;
+    _imageURL = nil;
+    _newsId = nil;
     
     return self;
 }
@@ -26,9 +29,9 @@
         _source = data.source.name;
         
         if (data.urlToImage != nil) {
-            _imageUrl = [NSURL URLWithString:data.urlToImage];
+            _imageURL = [NSURL URLWithString:data.urlToImage];
         } else {
-            _imageUrl = nil;
+            _imageURL = nil;
         }
         
         if (data.url != nil) {
@@ -61,7 +64,7 @@
     _title = title;
     _short_description = short_description;
     _source = source;
-    _imageUrl = [NSURL URLWithString:image];
+    _imageURL = [NSURL URLWithString:image];
     
     if (dateString != nil) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -75,6 +78,20 @@
         _publisherAt = nil;
         
     }
+    
+    return self;
+}
+
+
+- (instancetype)initWithFavorite:(FavoriteNews *)favorite
+{
+    _title = favorite.title;
+    _short_description = favorite.short_description;
+    _url = [NSURL URLWithString:favorite.url];
+    _imageURL = [NSURL URLWithString:favorite.imageURL];
+    _source = favorite.source;
+    _publisherAt = favorite.publiched_at;
+    _newsId = favorite.id;
     
     return self;
 }

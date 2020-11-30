@@ -53,8 +53,8 @@
 
     self.imgNews = view.imgNews;
             
-    if (_news.imageUrl != nil) {
-        [_photoSerice getPhotoBy:_news.imageUrl :^(UIImage * _Nonnull data) {
+    if (_news.imageURL != nil) {
+        [_photoSerice getPhotoBy:_news.imageURL :^(UIImage * _Nonnull data) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.imgNews.image = data;
             });

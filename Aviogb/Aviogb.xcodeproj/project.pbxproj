@@ -21,6 +21,10 @@
 		15639D2F256FC4C9009D5193 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15639D2E256FC4C9009D5193 /* CollectionViewController.m */; };
 		15639D32256FC52A009D5193 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15639D31256FC52A009D5193 /* CollectionViewCell.m */; };
 		15639D35256FC61E009D5193 /* SearchResultControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15639D34256FC61E009D5193 /* SearchResultControllerTableViewController.m */; };
+		1583D662257508B50090D332 /* Favorites.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1583D660257508B50090D332 /* Favorites.xcdatamodeld */; };
+		1583D666257509F10090D332 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583D665257509F10090D332 /* CoreDataStack.m */; };
+		1583D66925750C050090D332 /* FavoriteNews+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583D66825750C050090D332 /* FavoriteNews+CoreDataProperties.m */; };
+		1583D66C25750C4C0090D332 /* FavoriteNews+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583D66B25750C4C0090D332 /* FavoriteNews+CoreDataClass.m */; };
 		1585053F255D489D0041B7D3 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 1585053E255D489D0041B7D3 /* airports.json */; };
 		15850541255D48A50041B7D3 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 15850540255D48A50041B7D3 /* cities.json */; };
 		15850543255D48AC0041B7D3 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 15850542255D48AC0041B7D3 /* countries.json */; };
@@ -73,6 +77,13 @@
 		15639D31256FC52A009D5193 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		15639D33256FC613009D5193 /* SearchResultControllerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultControllerTableViewController.h; sourceTree = "<group>"; };
 		15639D34256FC61E009D5193 /* SearchResultControllerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultControllerTableViewController.m; sourceTree = "<group>"; };
+		1583D661257508B50090D332 /* Favorites.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorites.xcdatamodel; sourceTree = "<group>"; };
+		1583D664257509E50090D332 /* CoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		1583D665257509F10090D332 /* CoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		1583D66725750BE10090D332 /* FavoriteNews+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavoriteNews+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1583D66825750C050090D332 /* FavoriteNews+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavoriteNews+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1583D66A25750C3D0090D332 /* FavoriteNews+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavoriteNews+CoreDataClass.h"; sourceTree = "<group>"; };
+		1583D66B25750C4C0090D332 /* FavoriteNews+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavoriteNews+CoreDataClass.m"; sourceTree = "<group>"; };
 		1585053E255D489D0041B7D3 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		15850540255D48A50041B7D3 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		15850542255D48AC0041B7D3 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
@@ -156,6 +167,10 @@
 				154F51AC256695E200FC1F33 /* News.m */,
 				154F51AE2566962F00FC1F33 /* NewsDetailView.h */,
 				154F51AF2566963B00FC1F33 /* NewsDetailView.m */,
+				1583D66725750BE10090D332 /* FavoriteNews+CoreDataProperties.h */,
+				1583D66825750C050090D332 /* FavoriteNews+CoreDataProperties.m */,
+				1583D66A25750C3D0090D332 /* FavoriteNews+CoreDataClass.h */,
+				1583D66B25750C4C0090D332 /* FavoriteNews+CoreDataClass.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -171,6 +186,15 @@
 				15639D34256FC61E009D5193 /* SearchResultControllerTableViewController.m */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		1583D663257509BE0090D332 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1583D664257509E50090D332 /* CoreDataStack.h */,
+				1583D665257509F10090D332 /* CoreDataStack.m */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		15850547255D493C0041B7D3 /* View */ = {
@@ -270,6 +294,7 @@
 		158D0040255D4460003264ED /* Aviogb */ = {
 			isa = PBXGroup;
 			children = (
+				1583D663257509BE0090D332 /* CoreData */,
 				15639D2C256FC476009D5193 /* CollectionView */,
 				152A339B256BC73D0047103D /* Map */,
 				154F51942566912F00FC1F33 /* News */,
@@ -287,6 +312,7 @@
 				158D004F255D446B003264ED /* LaunchScreen.storyboard */,
 				158D0052255D446B003264ED /* Info.plist */,
 				158D0053255D446B003264ED /* main.m */,
+				1583D660257508B50090D332 /* Favorites.xcdatamodeld */,
 			);
 			path = Aviogb;
 			sourceTree = "<group>";
@@ -391,10 +417,12 @@
 				1585054A255D49720041B7D3 /* AirportListView.m in Sources */,
 				154F519D256692D900FC1F33 /* PhotoService.m in Sources */,
 				15850569255D4D9F0041B7D3 /* CountryListController.m in Sources */,
+				1583D666257509F10090D332 /* CoreDataStack.m in Sources */,
 				158D0043255D4461003264ED /* AppDelegate.m in Sources */,
 				1585054D255D49C80041B7D3 /* AirportCell.m in Sources */,
 				158D0063255D4641003264ED /* Airport.m in Sources */,
 				15850562255D4CE20041B7D3 /* CountryListView.m in Sources */,
+				1583D66C25750C4C0090D332 /* FavoriteNews+CoreDataClass.m in Sources */,
 				154F51A62566944200FC1F33 /* NewsView.m in Sources */,
 				15639D32256FC52A009D5193 /* CollectionViewCell.m in Sources */,
 				15639D2F256FC4C9009D5193 /* CollectionViewController.m in Sources */,
@@ -406,7 +434,9 @@
 				15850546255D48FB0041B7D3 /* DataManager.m in Sources */,
 				15850559255D4B390041B7D3 /* CityListCell.m in Sources */,
 				154F51AD256695E200FC1F33 /* News.m in Sources */,
+				1583D662257508B50090D332 /* Favorites.xcdatamodeld in Sources */,
 				152A33A1256BC7CC0047103D /* MapView.m in Sources */,
+				1583D66925750C050090D332 /* FavoriteNews+CoreDataProperties.m in Sources */,
 				158D0046255D4461003264ED /* SceneDelegate.m in Sources */,
 				15850565255D4D360041B7D3 /* CountryListViewCell.m in Sources */,
 				152A339E256BC7880047103D /* MapController.m in Sources */,
@@ -601,6 +631,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1583D660257508B50090D332 /* Favorites.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1583D661257508B50090D332 /* Favorites.xcdatamodel */,
+			);
+			currentVersion = 1583D661257508B50090D332 /* Favorites.xcdatamodel */;
+			path = Favorites.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 158D0036255D4460003264ED /* Project object */;
 }
