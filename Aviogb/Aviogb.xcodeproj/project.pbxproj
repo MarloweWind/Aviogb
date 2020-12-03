@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1509AF232578FA5700E9ED40 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1509AF222578FA5700E9ED40 /* NotificationCenter.m */; };
 		152A339E256BC7880047103D /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152A339D256BC7880047103D /* MapController.m */; };
 		152A33A1256BC7CC0047103D /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 152A33A0256BC7CC0047103D /* MapView.m */; };
 		154F51962566914800FC1F33 /* NewsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F51952566914800FC1F33 /* NewsData.m */; };
@@ -49,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1509AF202578FA4500E9ED40 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		1509AF222578FA5700E9ED40 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
 		152A339C256BC75A0047103D /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		152A339D256BC7880047103D /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		152A339F256BC7C20047103D /* MapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -135,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1509AF1F2578FA1C00E9ED40 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				1509AF202578FA4500E9ED40 /* NotificationCenter.h */,
+				1509AF222578FA5700E9ED40 /* NotificationCenter.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		152A339B256BC73D0047103D /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +306,7 @@
 		158D0040255D4460003264ED /* Aviogb */ = {
 			isa = PBXGroup;
 			children = (
+				1509AF1F2578FA1C00E9ED40 /* Notification */,
 				1583D663257509BE0090D332 /* CoreData */,
 				15639D2C256FC476009D5193 /* CollectionView */,
 				152A339B256BC73D0047103D /* Map */,
@@ -425,6 +438,7 @@
 				1583D66C25750C4C0090D332 /* FavoriteNews+CoreDataClass.m in Sources */,
 				154F51A62566944200FC1F33 /* NewsView.m in Sources */,
 				15639D32256FC52A009D5193 /* CollectionViewCell.m in Sources */,
+				1509AF232578FA5700E9ED40 /* NotificationCenter.m in Sources */,
 				15639D2F256FC4C9009D5193 /* CollectionViewController.m in Sources */,
 				158D0060255D45FC003264ED /* City.m in Sources */,
 				154F51B02566963B00FC1F33 /* NewsDetailView.m in Sources */,

@@ -14,6 +14,7 @@
 #import "AirportListView.h"
 #import "AirportCell.h"
 #import "MapController.h"
+#import "NotificationCenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) Country *selectedCountry;
 @property (nonatomic, strong) City *selectedCity;
 @property (nonatomic, strong) NSMutableArray *airports;
+@property (nonatomic, strong) UIDatePicker *datePicker;
+@property (nonatomic, strong) UITextField *dateTextField;
 
 - (instancetype) initWithCity:(City *) city AndCountry:(Country *)country;
 

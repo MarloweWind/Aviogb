@@ -27,24 +27,21 @@
     [super viewDidLoad];
     self.title = @"Страны";
     
-    // Закастим вью как CountryListView
     CountryListView *view = (CountryListView *)self.view;
     
-    // Объявим делегата и датасурс у тэйблвью
     self.tableView = view.tableView;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    // Объявляем делегат для поиска
+
+    self.view.backgroundColor = [UIColor whiteColor];
+
     self.searchController = view.searchController;
     self.resultViewController = view.resultViewController;
     self.searchController.searchResultsUpdater = self;
     self.definesPresentationContext = YES;
-    
-    // Регистрируем класс для отображения ячейки
+
     [self.tableView registerClass:CountryListViewCell.self forCellReuseIdentifier:@"countryViewCell"];
-    
-    // Загружаем данные
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadDataComplete:) name:kDataManagerLoadDataDidComplete object:nil];
     [[DataManager sharedInstance] loadData];
 }
@@ -54,7 +51,16 @@
 }
 
 - (void)loadDataComplete:(NSNotification *)notification {
-    self.view.backgroundColor = [UIColor greenColor];
+    NSArray *scens = [UIApplication sharedApplication].connectedScenes.allObjects;
+    NSArray *windows = [[scens firstObject] windows];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isKeyWindow == true"];
+    UIWindow *currentWinow = [[windows filteredArrayUsingPredicate:predicate] firstObject];
+    currentWinow.subviews.lastObject.layer.opacity = 1;
+    
+    [UIView animateWithDuration:0.9 animations:^{
+        currentWinow.subviews.lastObject.layer.opacity = 0;
+    }];
+    
     self.countries = [NSMutableArray arrayWithArray:[DataManager sharedInstance].countries];
     [self.tableView reloadData];
 }
